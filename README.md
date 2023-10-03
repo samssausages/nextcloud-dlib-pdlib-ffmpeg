@@ -2,6 +2,9 @@
 ## Dockerfile that includes dependencies for AI Image Recognition
 ### should just be able to build this and go!
 
+
+
+
 ## Apache with HTTPS SSL Certificate
 ### dockerfile_ssl is a dockerfile that lets you install/use your own certificate with Apache (No reverse Proxy)
 
