@@ -1,6 +1,6 @@
 # nextcloud-dlib-pdlib-ffmpeg
 ## Dockerfile that includes dependencies for AI Image Recognition
-### should just be able to build this and go!
+Just build this and go!
 
 
 
