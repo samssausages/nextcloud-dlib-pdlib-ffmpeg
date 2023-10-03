@@ -1,5 +1,5 @@
 # nextcloud-dlib-pdlib-ffmpeg
-## Dockerfile that includes dependencies for AI Image Recognition
+## Pdlib for AI Image Recognition
 Just `docker build -t dockerfile .` and go!
 
 ## Apache with HTTPS SSL Certificate
