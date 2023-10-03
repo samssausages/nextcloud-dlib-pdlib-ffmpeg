@@ -2,11 +2,8 @@
 ## Dockerfile that includes dependencies for AI Image Recognition
 Just `docker build -t dockerfile .` and go!
 
-
-
-
 ## Apache with HTTPS SSL Certificate
-dockerfile_ssl is a dockerfile that lets you install/use your own certificate with Apache (No reverse Proxy)
+dockerfile_ssl is a dockerfile that lets you install/use your own certificate with Apache (HTTPS with no reverse Proxy. For SSL on intranet or when accessing with VPN, I.E. not exposed to www)
 
 1. Make sure dockerfile_ssl and the setssl.sh are in the same folder
 
