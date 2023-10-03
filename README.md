@@ -14,13 +14,14 @@ dockerfile_ssl is a dockerfile that lets you install/use your own certificate wi
 
 `RUN /usr/local/bin/setssl.sh subdomain.domain.com admin@domain.com`
 
-4. Navigate to folder and run 
+3. Navigate to folder and run 
 
 `docker build -t dockerfile_ssl .`
 
-5. Update your docker-compose file to use the image you created. (Whaever you named it)
+4. Update your docker-compose file to use the image you created. (Whatever you named it)
 
-6. Add a volume mapping to the certificate files in your docker compose files.  I'm using ACME in pfsense to generate my certificates, so that's the naming convention I'm showing in this example.  But other methods to generate them will work as well.  Should look like this, modify with location and name to your certificate file:
+5. Edit docker-compose file with volume mapping to ssl certificate files.
+I'm using ACME in pfsense to generate my certificates, so that's the naming convention I'm showing in this example.  But other Letsencrypt methods will work as well.  Should look like this, modify with location and name to your certificate file.  Keep the docker destination/name as is, only edit the part on the left:
 
 ```
     volumes:
@@ -29,4 +30,4 @@ dockerfile_ssl is a dockerfile that lets you install/use your own certificate wi
       - /mnt/certs/subdomain.domain.com.key:/etc/ssl/nextcloud/key.pem:ro
 ```
 
-5. Profit
+6. Profit
