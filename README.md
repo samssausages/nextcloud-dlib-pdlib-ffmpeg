@@ -8,7 +8,7 @@ Just build this and go!
 ## Apache with HTTPS SSL Certificate
 dockerfile_ssl is a dockerfile that lets you install/use your own certificate with Apache (No reverse Proxy)
 
-1. Make sure the dockerfile_ssl and the setssl.sh are in the same folder
+1. Make sure dockerfile_ssl and the setssl.sh are in the same folder
 2. edit dockerfile_ssl to add your domain name and email address.  Look for this line:
 `RUN /usr/local/bin/setssl.sh subdomain.domain.com admin@domain.com`
 4. Navigate to folder and run `docker build -t dockerfile_ssl .`
