@@ -1,0 +1,17 @@
+# Using the nextcloud:apache image as a base
+FROM nextcloud:production-apache
+
+# Set up environment variables or necessary settings
+ENV DEBIAN_FRONTEND=noninteractive
+
+# SSL install, needs setssl.sh in root of build folder.  (If you want to use your own ssl cert on Apache with no reverse proxy)
+# Config your domain and email if using this.
+COPY setssl.sh /usr/local/bin/
+RUN /usr/local/bin/setssl.sh subdomain.domain.com admin@domain.com
+
+# Clean up
+RUN apt-get autoremove -y \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /tmp/* \
+    && rm -rf /var/tmp/*  
