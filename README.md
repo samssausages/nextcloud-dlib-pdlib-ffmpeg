@@ -1,4 +1,4 @@
-NOTE: I stopped maintaining this because nextcloud is starting to fill the void and support is being added natively.
+NOTE: I stopped maintaining this because nextcloud is starting to fill the void and support (or alternative plugins) are being added natively.
 
 # nextcloud-dlib-pdlib-ffmpeg
 ## Pdlib for AI Image Recognition
